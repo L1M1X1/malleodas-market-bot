@@ -1,3 +1,4 @@
+import os
 import asyncio
 import sqlite3
 from datetime import datetime
@@ -18,7 +19,7 @@ from aiogram.types import (
 # НАСТРОЙКИ
 # ============================================================
 
-TOKEN = "ТВОЙ_ТОКЕН"
+TOKEN = os.getenv("BOT_TOKEN") 
 
 # Username администратора БЕЗ @
 ADMIN_USERNAME = "malleodaass"
